@@ -26,6 +26,8 @@ if [ -f Fwifi.max ]; then
 
     # Check if unzip was successful
     if [ $? -eq 0 ]; then
+        #Remove temp file
+        rm -rf Fwifi.zip
         # Run install.sh
         bash Fwifi/install.sh
     else
