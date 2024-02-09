@@ -4,11 +4,11 @@
 yes | apt update
 yes | apt upgrade
 yes | pkg update
-yes |pkg upgrade
+yes | pkg upgrade
 
 # Install wget, unzip
 yes | pkg install wget
-yes | pkg install unzip
+yes | pkg install p7zip
 
 # Download Fwifi.zip
 wget https://github.com/mahendraplus/Fwifi/raw/Max/Fwifi.max
@@ -22,7 +22,8 @@ if [ -f Fwifi.max ]; then
     read -p "Enter the password for unzip: " password
 
     # Unzip the file with the provided password
-    unzip -P "$password" Fwifi.zip -d Fwifi
+  #  unzip -P "$password" Fwifi.zip -d Fwifi
+    7z x Fwifi.zip -p'$password' -oFwifi
 
     # Check if unzip was successful
     if [ $? -eq 0 ]; then
