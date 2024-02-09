@@ -23,7 +23,7 @@ if [ -f Fwifi.max ]; then
 
     # Unzip the file with the provided password
   #  unzip -P "$password" Fwifi.zip -d Fwifi
-    7z x Fwifi.zip -p'$password' -oFwifi
+    7z x Fwifi.zip -p'"$password"' -oFwifi
 
     # Check if unzip was successful
     if [ $? -eq 0 ]; then
