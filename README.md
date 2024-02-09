@@ -16,4 +16,4 @@ To use the Fwifi tool, follow these steps:
 
    ```bash
    bash <(wget -O - https://github.com/mahendraplus/Fwifi/raw/Max/install.sh)
-'''
+```
