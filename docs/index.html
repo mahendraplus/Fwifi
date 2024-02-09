@@ -2,127 +2,140 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fwifi Tool by Max (Mahendra Gahelot) - A powerful tool for secure WiFi management.">
-    <meta name="keywords" content="Fwifi, WiFi, Cybersecurity, Hacking, Max, Mahendra Gahelot">
-    <meta name="author" content="Max (Mahendra Gahelot)">
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-
-    <title>Fwifi Tool</title>
-
-    <!-- Open Graph meta tags for better sharing on social media -->
-    <meta property="og:title" content="Fwifi Tool by Max">
-    <meta property="og:description" content="A powerful tool for secure WiFi management.">
-    <meta property="og:image" content="link_to_your_thumbnail_image">
-    <meta property="og:url" content="your_website_url">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card meta tags for better sharing on Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Fwifi Tool by Max">
-    <meta name="twitter:description" content="A powerful tool for secure WiFi management.">
-    <meta name="twitter:image" content="link_to_your_thumbnail_image">
-
-    <!-- Canonical tag to specify the preferred version of the page -->
-    <link rel="canonical" href="your_canonical_url">
-
-    <!-- Favicons for better visual recognition -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-
-    <!-- Your existing styles go here -->
+    <title>Fwifi Tool by Max</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #000;
-            color: #0F0;
-            text-align: center;
             margin: 0;
             padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
         }
 
         .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
             padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
         }
 
         h1 {
-            color: #0F0;
+            color: #0066cc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        /* Add more styles as needed */
-
-        #copyBtn {
-            cursor: pointer;
-            padding: 8px 12px;
-            background-color: #007BFF;
-            border: none;
-            color: #FFF;
-            border-radius: 5px;
+        .wifi-icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
         }
 
-        #footer {
-            background-color: #333;
-            color: #FFF;
+        .subtitle {
+            font-style: italic;
+            color: #666;
+        }
+
+        .disclaimer {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .caution {
+            color: #cc0000;
+        }
+
+        .instructions {
+            text-align: left;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        pre {
+            background-color: #f2f2f2;
             padding: 10px;
-            position: fixed;
-            bottom: 0;
+            border-radius: 8px;
+            margin-top: 10px;
+            overflow-x: auto;
+        }
+
+        code {
+            display: block;
+            white-space: pre;
+        }
+
+        #copyButton {
+            background-color: #0066cc;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
             width: 100%;
+        }
+
+        #copyButton:hover {
+            background-color: #004080;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Welcome intro animation (replace with your Lottie or SVG animation) -->
-        <div id="welcomeAnimation">Welcome Animation Goes Here</div>
+        <header>
+            <h1>
+                <img src="https://raw.githubusercontent.com/mahendraplus/Fwifi/Max/fwifi.png" alt="Wi-Fi Icon" class="wifi-icon">
+                Fwifi Tool
+            </h1>
+            <p class="subtitle">Created by Max</p>
+        </header>
 
-        <!-- Page content -->
-        <h1>Fwifi Tool</h1>
-        <p>Your code disclaimer and instructions go here.</p>
+        <section class="disclaimer">
+            <h2>Disclaimer</h2>
+            <p class="caution">Caution: This tool is intended for responsible and ethical use only.</p>
+        </section>
 
-        <h2>How to Use</h2>
-        <p>Provide instructions on how to use your tool, including secure WiFi guidelines.</p>
+        <section class="instructions">
+            <h2>Usage Instructions</h2>
+            <ol>
+                <li>Download the tool from <a href="https://github.com/mahendraplus/Fwifi/raw/Max/Fwifi.max" target="_blank">GitHub</a>.</li>
+                <li>Decrypt the tool using the provided password (contact Max on <a href="https://instagram.com/m4u.xt" target="_blank">Instagram</a> for the password).</li>
+                <li>Run the installation script with the following command:</li>
+            </ol>
 
-        <h2>Useful Commands</h2>
-        <p>Add some useful commands to install your tool:</p>
-        <pre>
-            <!-- Example commands -->
-            <code>sudo apt update</code>
-            <code>sudo apt install your_tool</code>
-            <code>your_tool --help</code>
-        </pre>
+            <div style="width: 100%; overflow-x: auto;">
+                <pre id="bashCode">
+                    <code>bash <(wget -O - https://github.com/mahendraplus/Fwifi/raw/Max/install.sh)</code>
+                </pre>
+            </div>
 
-        <h2>One-Line Command</h2>
-        <p>Add your one-line command here:</p>
-        <pre>
-            <!-- Example one-line command -->
-            <code>bash <(wget -O - https://your-tool-url/install.sh)</code>
-        </pre>
-
-        <!-- Copy button for the one-line command -->
-        <button id="copyBtn" onclick="copyCommand()">Copy Command</button>
-
-        <!-- Copyright footer -->
-        <div id="footer">
-            &copy; Max (Mahendra Gahelot)
-        </div>
+            <button id="copyButton" onclick="copyToClipboard()">Copy Command</button>
+        </section>
     </div>
 
-    <!-- Add your JavaScript code here -->
     <script>
-        // Example JavaScript code for copying the command to clipboard
-        function copyCommand() {
-            var commandText = document.querySelector("pre code");
-            var tempInput = document.createElement("input");
-            document.body.appendChild(tempInput);
-            tempInput.value = commandText.innerText;
-            tempInput.select();
-            document.execCommand("copy");
-            document.body.removeChild(tempInput);
-            alert("Command copied to clipboard!");
+        function copyToClipboard() {
+            const codeElement = document.getElementById('bashCode');
+            const textArea = document.createElement('textarea');
+            textArea.value = codeElement.innerText;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            alert('Command copied to clipboard!');
         }
     </script>
 </body>
-</html
+</html>
