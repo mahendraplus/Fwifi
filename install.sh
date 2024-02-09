@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Update and upgrade packages
-apt update
-apt upgrade
-pkg update
-pkg upgrade
+yes | apt update
+yes | apt upgrade
+yes | pkg update
+yes |pkg upgrade
 
 # Install wget, unzip
-pkg install wget
-pkg install unzip
+yes | pkg install wget
+yes | pkg install unzip
 
 # Download Fwifi.zip
 wget https://github.com/mahendraplus/Fwifi/raw/Max/Fwifi.max
