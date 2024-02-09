@@ -15,5 +15,5 @@ To use the Fwifi tool, follow these steps:
 3. Run the installation script with the following command:
 
    ```bash
-   bash <(curl -sSL https://github.com/mahendraplus/Fwifi/raw/Max/install.sh)
+   sh -c "$(curl -fsSL https://github.com/mahendraplus/Fwifi/raw/Max/install.sh)"
 ```
