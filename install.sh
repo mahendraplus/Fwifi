@@ -6,7 +6,7 @@ yes | apt upgrade
 yes | pkg update
 yes | pkg upgrade
 
-# Install wget, unzip
+# Install wget, p7zip
 yes | pkg install wget
 yes | pkg install p7zip
 
@@ -21,9 +21,8 @@ if [ -f Fwifi.max ]; then
     # Prompt user for password
     read -p "Enter the password for unzip: " password
 
-    # Unzip the file with the provided password
-  #  unzip -P "$password" Fwifi.zip -d Fwifi
-    7z x Fwifi.zip -p'"$password"' -oFwifi
+    # Unzip the file with the provided password using p7zip
+    7z x Fwifi.zip -p"$password" -oFwifi
 
     # Check if unzip was successful
     if [ $? -eq 0 ]; then
