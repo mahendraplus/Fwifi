@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fwifi Tool by Max (Mahendra Gahelot) - A powerful tool for secure WiFi management.">
+    <meta name="keywords" content="Fwifi, WiFi, Cybersecurity, Hacking, Max, Mahendra Gahelot">
+    <meta name="author" content="Max (Mahendra Gahelot)">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <title>Fwifi Tool</title>
+
+    <!-- Open Graph meta tags for better sharing on social media -->
+    <meta property="og:title" content="Fwifi Tool by Max">
+    <meta property="og:description" content="A powerful tool for secure WiFi management.">
+    <meta property="og:image" content="link_to_your_thumbnail_image">
+    <meta property="og:url" content="your_website_url">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card meta tags for better sharing on Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fwifi Tool by Max">
+    <meta name="twitter:description" content="A powerful tool for secure WiFi management.">
+    <meta name="twitter:image" content="link_to_your_thumbnail_image">
+
+    <!-- Canonical tag to specify the preferred version of the page -->
+    <link rel="canonical" href="your_canonical_url">
+
+    <!-- Favicons for better visual recognition -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+    <!-- Your existing styles go here -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #0F0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            color: #0F0;
+        }
+
+        /* Add more styles as needed */
+
+        #copyBtn {
+            cursor: pointer;
+            padding: 8px 12px;
+            background-color: #007BFF;
+            border: none;
+            color: #FFF;
+            border-radius: 5px;
+        }
+
+        #footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome intro animation (replace with your Lottie or SVG animation) -->
+        <div id="welcomeAnimation">Welcome Animation Goes Here</div>
+
+        <!-- Page content -->
+        <h1>Fwifi Tool</h1>
+        <p>Your code disclaimer and instructions go here.</p>
+
+        <h2>How to Use</h2>
+        <p>Provide instructions on how to use your tool, including secure WiFi guidelines.</p>
+
+        <h2>Useful Commands</h2>
+        <p>Add some useful commands to install your tool:</p>
+        <pre>
+            <!-- Example commands -->
+            <code>sudo apt update</code>
+            <code>sudo apt install your_tool</code>
+            <code>your_tool --help</code>
+        </pre>
+
+        <h2>One-Line Command</h2>
+        <p>Add your one-line command here:</p>
+        <pre>
+            <!-- Example one-line command -->
+            <code>bash <(wget -O - https://your-tool-url/install.sh)</code>
+        </pre>
+
+        <!-- Copy button for the one-line command -->
+        <button id="copyBtn" onclick="copyCommand()">Copy Command</button>
+
+        <!-- Copyright footer -->
+        <div id="footer">
+            &copy; Max (Mahendra Gahelot)
+        </div>
+    </div>
+
+    <!-- Add your JavaScript code here -->
+    <script>
+        // Example JavaScript code for copying the command to clipboard
+        function copyCommand() {
+            var commandText = document.querySelector("pre code");
+            var tempInput = document.createElement("input");
+            document.body.appendChild(tempInput);
+            tempInput.value = commandText.innerText;
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            alert("Command copied to clipboard!");
+        }
+    </script>
+</body>
+</html
